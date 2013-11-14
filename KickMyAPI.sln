@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KickMyAPI", "KickMyAPI.csproj", "{BA877C5E-6AF8-408C-AF73-8A10BC43F5A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{C1FEF502-30DB-4351-91DC-458B58C48CF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{BA877C5E-6AF8-408C-AF73-8A10BC43F5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA877C5E-6AF8-408C-AF73-8A10BC43F5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA877C5E-6AF8-408C-AF73-8A10BC43F5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FEF502-30DB-4351-91DC-458B58C48CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FEF502-30DB-4351-91DC-458B58C48CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FEF502-30DB-4351-91DC-458B58C48CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FEF502-30DB-4351-91DC-458B58C48CF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

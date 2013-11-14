@@ -15,16 +15,26 @@ namespace KickMyAPI
     /// </summary>
     public class APIKicker : IDisposable
     {
-        private WebRequest request;
+        WebRequest request;
+        string initialURI;
 
         /// <summary>
-        /// 受け取ったURIをもとに WebRequestクラスを作成しておく
+        /// 受け取ったURIを保存し、WebRequestクラスを作成する
         /// </summary>
         /// <param name="uri">APIのURI</param>
         public APIKicker(string uri)
         {
+            initialURI = uri;
             request = WebRequest.Create(uri);
+        }
 
+        /// <summary>
+        /// コンストラクタで渡されたURIを表示する
+        /// </summary>
+        /// <returns></returns>
+        public string GetURI()
+        {
+            return initialURI;
         }
 
         /// <summary>
