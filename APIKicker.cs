@@ -34,6 +34,7 @@ namespace KickMyAPI
         /// <returns></returns>
         public string GetURI()
         {
+            //return "mytest";
             return initialURI;
         }
 
@@ -44,10 +45,15 @@ namespace KickMyAPI
         {
             using (var response = request.GetResponse())
             {
-                using (var stream = new StreamReader(response.GetResponseStream()))
-                {
-                    return stream.ReadToEnd();
-                }
+                return readAllResponse(response);
+            }
+        }
+
+        private static string readAllResponse(WebResponse response)
+        {
+            using (var stream = new StreamReader(response.GetResponseStream()))
+            {
+                return stream.ReadToEnd();
             }
         }
 
@@ -58,5 +64,16 @@ namespace KickMyAPI
         {
             request = null;
         }
+
+        public object GetURI2()
+        {
+            return initialURI;
+        }
+
+        public int myCurrent(int number)
+        {
+            return Current;
+        }
+        public int Current { get; set; }
     }
 }
